@@ -1,0 +1,14 @@
+{
+  "name": "hello-github-actions",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Volcomix/hello-github-actions.git",
+  "author": "Volcomix <Volcomix@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.3"
+  }
+}

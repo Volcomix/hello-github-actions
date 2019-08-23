@@ -8,4 +8,4 @@ jobs:
       - name: Start
         run: |
           yarn
-          yarn start
+          xvfb-run yarn start

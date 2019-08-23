@@ -1,12 +1,11 @@
-name: A workflow for my Hello World file
+name: Run Electron app
 on: push
 jobs:
   run:
-    name: Run Electron app
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Start the app
+      - name: Start
         run: |
           yarn
           yarn start

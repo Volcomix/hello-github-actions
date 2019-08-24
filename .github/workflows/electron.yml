@@ -9,3 +9,11 @@ jobs:
         run: |
           yarn
           xvfb-run yarn start
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Test
+        run: |
+          yarn
+          xvfb-run yarn test

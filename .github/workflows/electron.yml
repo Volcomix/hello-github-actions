@@ -11,7 +11,7 @@ jobs:
       - name: Start
         run: |
           yarn
-          xvfb-maybe yarn start
+          xvfb-run yarn start
   test:
     runs-on: ubuntu-latest
     steps:

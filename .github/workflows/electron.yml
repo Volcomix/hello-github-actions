@@ -1,8 +1,8 @@
 name: Run Electron app
 on:
-- push
-- schedule
-  - cron:  '0 7 * * *'
+  push:
+  schedule:
+    - cron: '0 7 * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
       - name: Start
         run: |
           yarn
-          xvfb-run yarn start
+          xvfb-maybe yarn start
   test:
     runs-on: ubuntu-latest
     steps:
